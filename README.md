@@ -129,6 +129,53 @@ Make sure you choose the correct edition and language for your needs.
 <img src="https://i.imgur.com/WvxrlTG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
 <p align="center">
 
+<b>Step 4: Lets create a static IP on our Server 2016 VM </b>
+
+- While the installation is taking place, we will create a static IP on the Server 2016 VM so we have one constant IP address for the lab environment.
+- Log into your Server 2016 WM.
+- Once logged in, type in "Control Panel" in the Windows search bar and open it.
+<p align="center">
+<img src="https://i.imgur.com/WSjEwuX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Click on "view network status and tasks" under the Network and Internet section.
+<p align="center">
+<img src="https://i.imgur.com/FvlrUlN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Click on "Change adapter settings" on the left-hand side of the window.
+<p align="center">
+<img src="https://i.imgur.com/CCsLkpP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Click on "Ethernet".
+- Then, click on "Properties" on the pop-up window.
+<p align="center">
+<img src="https://i.imgur.com/0oBykIW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- On the Ethernet Properties window, double-click on "Internet Protocol Version 4 (TCP/IPv4).
+- Next, on the Internet Protocol Version 4 (TCP/IPv4) properties window, select the "Use the following IP address:" option.
+- For the IP address, type in "10.1.10.2", click in the Subnet Mask section then the Subnet Mask will then fill itself out with "255.0.0.0" automatically. For the Default Gateway, we will type in "10.1.10.1"
+- Finally, leave the Use the following DNS server addresses:" option selected. In the "Preferred DNS server:" section we will type in "10.1.10.2". For the "Alternate DNS Server:" we will type in "10.1.10.1".
+- Click "OK" on all pop-up windows.
+<p align="center">
+<img src="https://i.imgur.com/oWDustZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- At the top of the VM screen, click on "Devices", hover over Network to the click on "Network settings".
+<p align="center">
+<img src="https://i.imgur.com/2RemRYN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Click on the "Attached to:" drop-down box and switch it from "NAT" to "Host-only Adapter"
+- Click "OK"
+<p align="center">
+<img src="https://i.imgur.com/MiHAWf2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+Now, we have created our static IP for our labbing environment and do not have to worry about the IP address changing on us until we do it manually.
+
 - Once installed, it'll ask you to select which country you reside in, for myself I will choose United States.
 - Click "Yes"
 <p align="center">
