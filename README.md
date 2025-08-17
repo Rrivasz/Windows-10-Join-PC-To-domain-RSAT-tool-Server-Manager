@@ -219,13 +219,78 @@ Finally, the Windows OS will take a few minutes to finish the installation and o
  
  <b>Step 4: Create a password for the User</b>
 
-- Choose a password for the new user. For the project, I recommend you use the same password as the one you made for the Windows server login.
-- Click “Next”
- <p align="center">
-<img src="https://i.imgur.com/PJiLWku.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+- When finally logged on, click on "File Explorer' at the bottom of the screen on the Task Bar.
+<p align="center">
+<img src="https://i.imgur.com/h2v4mnv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
 
+- After opening File Explorer, go to the left-hand side and right-click "This PC" and click on "Manage".
+<p align="center">
+<img src="https://i.imgur.com/K9keZfI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
 
 <br/>
+
+- Under the Computer Management window that we just opened, guide your cursor to the left-hand side and click the dropdown box next to "Local Users and Groups".
+- Click on "Users".
+- Then, right-click on administrators and you want to click on "Properties".
+<p align="center">
+<img src="https://i.imgur.com/qOfcXPB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Next, we will uncheck the box for "Account is disabled".
+- Keep the "Password never expires" checked.
+- Then click on "Apply".
+<p align="center">
+<img src="https://i.imgur.com/e8LVumI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Back on the Computer Management window, right-click on administrator again except this time we will be clicking on "Set Password".
+<p align="center">
+<img src="https://i.imgur.com/UD5w5AN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Click on "Proceed".
+<p align="center">
+<img src="https://i.imgur.com/V7wBq6t.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- In the "New password" box, we will use the same password, Password123!" we used for the "User" account which we are currenly on.
+- Press on "OK"
+- Press "OK" again to set the password.
+<p align="center">
+<img src="https://i.imgur.com/5R7RTS2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
+ 
+- Close out of all windows and go to the bottom left corner of the screen and right-click the Windows Start button.
+- Hover over "shut down or sign out" and click on "Sign out"
+<p align="center">
+<img src="https://i.imgur.com/zLmxz50.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
+
+- Now, we want to log into the Administrator account using the password we have set for it which is "Password123!".
+<p align="center">
+<img src="https://i.imgur.com/kNaai9c.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
+
+- Go to the left-hand side and right-click "This PC" and click on "Manage".
+<p align="center">
+<img src="https://i.imgur.com/q967Go0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
+
+- Guide your cursor to the left-hand side and click the dropdown box next to "Local Users and Groups".
+- Click on "Users".
+- Then, right-click on administrators and you want to click on "Properties".
+<p align="center">
+<img src="https://i.imgur.com/8m1Z0C5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
+
+
  
 <b>Step 5: Review</b>
 
