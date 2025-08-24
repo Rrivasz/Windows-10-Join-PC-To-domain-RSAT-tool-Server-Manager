@@ -380,9 +380,55 @@ Finally, the Windows OS will take a few minutes to finish the installation and o
 <br/>
 
 <p align="center">
-After following these steps, it will ask you to restart the PC in order to apply the name change we just did.
+After following these steps, it will ask you to restart the PC in order to apply the name change we just did. After done restarting, your PC should officially be renamed "Desktop1"!
 
+If you were to try to ping the domain with our Windows 10 PC, it would be unable to do so. So first what we will have to do is create a static IP address for our Windows 10 PC.
+
+- After the PC restarts, type in "Control Panel" in the Windows search bar and open it.
+<p align="center">
+<img src="https://i.imgur.com/WSjEwuX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Click on "view network status and tasks" under the Network and Internet section.
+<p align="center">
+<img src="https://i.imgur.com/FvlrUlN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Click on "Change adapter settings" on the left-hand side of the window.
+<p align="center">
+<img src="https://i.imgur.com/CCsLkpP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Click on "Ethernet".
+- Then, click on "Properties" on the pop-up window.
+<p align="center">
+<img src="https://i.imgur.com/0oBykIW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- On the Ethernet Properties window, double-click on "Internet Protocol Version 4 (TCP/IPv4).
+- Next, on the Internet Protocol Version 4 (TCP/IPv4) properties window, select the "Use the following IP address:" option.
+- For the IP address, type in "10.1.10.3", click in the Subnet Mask section then the Subnet Mask will then fill itself out with "255.0.0.0" automatically. For the Default Gateway, we will type in "10.1.10.1"
+- Finally, leave the Use the following DNS server addresses:" option selected. In the "Preferred DNS server:" section we will type in "10.1.10.2". For the "Alternate DNS Server:" we will type in "10.1.10.1".
+- Click "OK" on all pop-up windows.
+<p align="center">
+<img src="https://i.imgur.com/eJ8PPw4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
 <br/>
+
+<p align="center">
+Still, we will not be able to ping our domain so there will be a few more steps to accomplish that task.
+<br/>
+ 
+- At the top of the VM screen, click on "Devices", hover over Network to the click on "Network settings".
+<p align="center">
+<img src="https://i.imgur.com/ikX6fm6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+
+- Click on the "Attached to:" drop-down box and switch it from "NAT" to "Host-only Adapter"
+- Click "OK"
+<p align="center">
+<img src="https://i.imgur.com/vSfRzuw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
 
 <b>Step 7: Test Command on the Command line</b>
 
