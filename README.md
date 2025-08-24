@@ -284,42 +284,103 @@ Finally, the Windows OS will take a few minutes to finish the installation and o
 
 - Guide your cursor to the left-hand side and click the dropdown box next to "Local Users and Groups".
 - Click on "Users".
-- Then, right-click on administrators and you want to click on "Properties".
+- Then, right-click on Users and you want to click on "Delete".
 <p align="center">
-<img src="https://i.imgur.com/8m1Z0C5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<img src="https://i.imgur.com/8KCCfJW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
 <p align="center">
 <br/>
 
+- When a window pops up asking if you are sure you want to delete the "User" account, click "Yes".
+<p align="center">
+<img src="https://i.imgur.com/8KCCfJW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
 
+- Another window will come up letting you know you are about to delete an administrator account and to make sure you have another one set up before deleting, which we do, so will click on "OK".
+[Now, there is only one administrator account on the Windows10Lab VM, named "Administrator]
+<p align="center">
+<img src="https://i.imgur.com/vajwLqi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
+
+<p align="center">
+[Now, there is only one administrator account on the Windows10Lab VM, named "Administrator"]
+<p align="center">
+ <br/>
  
 <b>Step 5: Review</b>
 
-
-- Review everything and click “Finish” to complete the user creation.
- <p align="center">
-<img src="https://i.imgur.com/SOVsttv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-
+- On the home screen search bar, type in programs.
+- Click on "Add and removes programs" at the top of the panel
+<p align="center">
+<img src="https://i.imgur.com/QIctx37.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
 <br/>
 
-
-<b>Step 6: Verify User Account</b>
-
-- Under the users directory you should see the user “helpdesk” account that we just created. Under the helpdesk user properties you will see all the things that the user has access to. You can see that “helpdesk” has the same membership access as the system administrator.
-
+- Under the "Apps & features" section, click on "Optional features".
 <p align="center">
-<img src="https://i.imgur.com/3KamUMi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2ojeb5J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
 
+- Click the first option on the settings window, "Add a feature".
+<p align="center">
+<img src="https://i.imgur.com/R7lP1Yt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
 
-- Click “OK”
+- While on the Add a features window, check the box on ALL of the features I have pictures below.
+- Once that is done, click on "Install".
+<p align="center">
+<img src="https://i.imgur.com/0Qpv5qO.png" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5ZFwLgt.png" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/H21ajDf.png" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/aU4zsXR.png" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+<br/>
+
+- Once installed we want to restart our computer so our new features work properly.
+- Right-click the start button on the Windows 10 homescreen.
+- Hover over to "Shut down or sign out" and click on "Restart".
+<p align="center">
+<img src="https://i.imgur.com/3qVdMlq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
+ 
+<b>Step 6: Add our Windows 10 VM to our Domain</b>
+
+- Once the features are downloaded, log back into Administrator on the Windows 10 VM. While loggin in, we will also be opening our Server 2016 VM and logging in the Administrator on that VM.
+- We will need the IP address of our domain so we can add our Windows 10 account to the domain. Earlier, we created an static IP address for the domain to "10.1.10.2" but if you happen to not being able to recall that, then you can open up the command script and type in "ipconfig" and press enter.
+<p align="center">
+<img src="https://i.imgur.com/hmTcWGW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+
+- Next we will rename our Windows 10 computer to "Desktop1". Go to "File Explorer" at the bottom of the home screen at the task bar.
  <p align="center">
-<img src="https://i.imgur.com/8aHZjED.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/wKzueiy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <p align="center">
+<br/>
 
+- Then, guide your cursor over to left panel of the window to "This PC" and click on "Properties".
+<p align="center">
+<img src="https://i.imgur.com/LECDpvZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+<br/>
 
+- Click on "Rename this PC" on the "About" page about your computer.
+<p align="center">
+<img src="https://i.imgur.com/HXrDCwZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+<br/>
+
+- Under where it states the current name of the PC, there is a box to type in the new name we want for the PC, we will be doing "Desktop1". 
+<p align="center">
+<img src="https://i.imgur.com/wekmJdb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
 <br/>
 
 <p align="center">
-Congratulations we just created our first Active Directory user account and assigned it administrative permissions and memberships!
+After following these steps, it will ask you to restart the PC in order to apply the name change we just did.
 
 <br/>
 
