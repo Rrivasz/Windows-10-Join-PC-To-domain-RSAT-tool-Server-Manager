@@ -430,6 +430,22 @@ Still, we will not be able to ping our domain so there will be a few more steps 
 <img src="https://i.imgur.com/vSfRzuw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
 <p align="center">
 
+- Now we want to go back into "File explorer", right-click on "This PC" and click on "Properties" to go into the System Properties window.
+- Click the "Change..." button that is right under the "Network ID" button
+<p align="center">
+<img src="https://i.imgur.com/YiQAItA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
+
+- Under the "Member of" section, and click on the Domain bubble option so that it is filled in.
+- In the textbox, we will type in the domain name which is "RicardoRivas.local".
+- Click "OK"
+<p align="center">
+<img src="https://i.imgur.com/muDrY9Y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
+
+
 <b>Step 7: Test Command on the Command line</b>
 
 - There may come a time when you will have to use the command line to verify a user’s account and Important metadata about the server.
