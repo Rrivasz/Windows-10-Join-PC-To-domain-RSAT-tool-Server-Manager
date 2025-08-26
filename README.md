@@ -445,25 +445,47 @@ Still, we will not be able to ping our domain so there will be a few more steps 
 <p align="center">
 <br/>
 
-
-<b>Step 7: Test Command on the Command line</b>
-
-- There may come a time when you will have to use the command line to verify a user’s account and Important metadata about the server.
-- In the search bar on the home screen, type in "command" to open up the command prompt.
- <p align="center">
-<img src="https://i.imgur.com/A1Wvm6i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-- On the command line enter the following: "ipconfig /all"
-- Press Enter to run the command
+- Next, it will ask you to enter a user name and password of account that has permission to join the domain.
+- For user name we will type in "administrator" and the password is "Password123"
+- Click "OK"
+<p align="center">
+<img src="https://i.imgur.com/quIqbgg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
 
 <p align="center">
-<img src="https://i.imgur.com/N2Orifw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+At last, it will ask you to restart the PC in order to add the account to the domain. While the Windows 10 VM is restarting, we are going onto the Windows Server VM to reset the password for the helpdesk account.
+<p align="center">
+ <br/>
 
-- The following command "net user helpdesk /domain" will bring up more data in regards to the users in the active directory. Using this command line will bring our helpdesk user account and see info in regards to it.
-- This command is extremely useful to quickly get information in regards to a user’s account info and what things they have access to.
+ - On the Windows Server homescreen, click on the Active Directory Users and Computers shortcut at the bottom of the screen.
+<p align="center">
+<img src="https://i.imgur.com/q5IWzhm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
 
- <p align="center">
-<img src="https://i.imgur.com/oN04STA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+- Click the "Users" OU on the left panel, and look for the help desk account.
+- Right-click on "help desk" and click on "Reset Password..."
+<p align="center">
+<img src="https://i.imgur.com/Gj0raHZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
+
+- For the help desk account, the new password we will create for it will be "Password123".
+- Type the password again in the "Confirm Password:" type box.
+- Click "OK"
+<p align="center">
+<img src="https://i.imgur.com/I9PnUn6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
+<br/>
 
 <p align="center">
-<b>Finally, an Active Directory User account has been created and special privileges were assigned to it to be able to perform certain tasks and being apart of various organizations.</b>
+Now the password has been reset for the helpdesk account and we can confirm to see whether or not the account was added to the domain!
+<p align="center">
+ <br/>
+
+ - Log into the help desk account on the Windows 10 VM with the new password we gave it.
+ - When logged in, open Active Directory Users and Computer and there you see, RicardoRivas.local, our domain on the left-hand side!
+<p align="center">
+<img src="https://i.imgur.com/yj1L8HR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<p align="center">
