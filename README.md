@@ -386,23 +386,23 @@ If you were to try to ping the domain with our Windows 10 PC, it would be unable
 
 - After the PC restarts, type in "Control Panel" in the Windows search bar and open it.
 <p align="center">
-<img src="https://i.imgur.com/WSjEwuX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<img src="https://i.imgur.com/nYDvanb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
 <p align="center">
 
 - Click on "view network status and tasks" under the Network and Internet section.
 <p align="center">
-<img src="https://i.imgur.com/FvlrUlN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<img src="https://i.imgur.com/atwXFJu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
 <p align="center">
 
 - Click on "Change adapter settings" on the left-hand side of the window.
 <p align="center">
-<img src="https://i.imgur.com/CCsLkpP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<img src="https://i.imgur.com/HQWj2k6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
 <p align="center">
 
 - Click on "Ethernet".
 - Then, click on "Properties" on the pop-up window.
 <p align="center">
-<img src="https://i.imgur.com/0oBykIW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+<img src="https://i.imgur.com/k8mhj4g.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
 <p align="center">
 
 - On the Ethernet Properties window, double-click on "Internet Protocol Version 4 (TCP/IPv4).
