@@ -79,7 +79,7 @@ Make sure you choose the correct edition and language for your needs.
 <p align="center">
  <br/>
 
-<b>Step 3: Let’s start things up and setup Windows </b>
+<b>Step 3: Let’s start things up and setup Windows 10 </b>
 
 - Select "RRWindows10Lab" and click “Start”. 
 <p align="center">
@@ -217,7 +217,7 @@ Now, we have created our static IP for our labbing environment and do not have t
 Finally, the Windows OS will take a few minutes to finish the installation and once that is done you will be able to use Windows 10!
 <br/>
  
- <b>Step 4: Create a password for the User</b>
+ <b>Step 4: Back to setting up Windows 10 </b>
 
 - When finally logged on, click on "File Explorer' at the bottom of the screen on the Task Bar.
 <p align="center">
@@ -291,11 +291,6 @@ Finally, the Windows OS will take a few minutes to finish the installation and o
 <br/>
 
 - When a window pops up asking if you are sure you want to delete the "User" account, click "Yes".
-<p align="center">
-<img src="https://i.imgur.com/8KCCfJW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
-<p align="center">
-<br/>
-
 - Another window will come up letting you know you are about to delete an administrator account and to make sure you have another one set up before deleting, which we do, so will click on "OK".
 [Now, there is only one administrator account on the Windows10Lab VM, named "Administrator]
 <p align="center">
@@ -308,7 +303,7 @@ Finally, the Windows OS will take a few minutes to finish the installation and o
 <p align="center">
  <br/>
  
-<b>Step 5: Review</b>
+<b>Step 5: Install help desk features through RSAT</b>
 
 - On the home screen search bar, type in programs.
 - Click on "Add and removes programs" at the top of the panel
